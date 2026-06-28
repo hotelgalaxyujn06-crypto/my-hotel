@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <nav class="navbar">
+        <a href="#"><img  class="logo" src="./IMAGES/Hotel Galaxy (1).png"/></a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+           <li><a href="#Rooms">Rooms</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#attractions">Explore</a></li>
+            <li><a href="#availability-split*">Check Availability</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+<!-- Hero Banner Section -->
+<section class="room-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <span class="hero-subtitle">Experience Luxury</span>
+        <h1 class="hero-title">Classic Family Room</h1>
+        <div class="breadcrumbs">
+            <a href="#">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="#">Rooms</a> <i class="fas fa-chevron-right"></i>
+            <span> Classic Family Room</span>
+        </div>
+    </div>
+</section>
+
+<!-- Main Room Details Section -->
+<section class="room-details-wrapper">
+    <div class="container">
+        <div class="room-layout-grid">
+            
+            <!-- Left Column: Image, Info, Amenities -->
+            <div class="room-main-content">
+                <!-- Image Slider (Placeholder) -->
+              <!-- Functional Image Slider -->
+<div class="room-gallery">
+    <div class="gallery-track" id="sliderTrack">
+        <!-- Add as many images as you need here -->
+        <img src="./IMAGES/ROOMIMG/SIZBED.jpeg" alt="Family Room View 1">
+        <img src="./IMAGES/ROOMIMG/SIXBED4.jpeg" alt="Family Room View 2">
+           <img src="./IMAGES/ROOMIMG/SIXBED5.jpeg" alt="Family Room Bathroom">
+              <img src="./IMAGES/ROOMIMG/SIXBED3.jpeg" alt="Family Room Bathroom">
+        <img src="./IMAGES/ROOMIMG/SIXBED3.jpeg" alt="Family Room Bathroom">
+
+
+    </div>
+    
+    <button class="gallery-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <button class="gallery-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    
+    <!-- Optional: Add indicators/dots at the bottom -->
+    <div class="slider-indicators" id="sliderIndicators"></div>
+</div>
+
+                <!-- Room Meta Info -->
+                <div class="room-meta-box">
+                    <div class="meta-items">
+                        <span><i class="fas fa-user-friends"></i> Up to 4 Guests</span>
+                        <span><i class="fas fa-vector-square"></i> 320 sq.ft</span>
+                        <span><i class="fas fa-bed"></i> 1 King, 1 Twin</span>
+                    </div>
+                    <div class="room-price">
+                        <span class="currency">₹</span>4,500 <span class="night">/ night</span>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="room-description">
+                    <h3>About This Room</h3>
+                    <p>Designed for travelers who appreciate both space and style, our Premium Family Room features modern furnishings, warm ambient lighting, and carefully selected premium amenities. Thoughtfully crafted to create a calming atmosphere, the space offers a perfect balance between elegance and functionality, ensuring a relaxing stay for the whole family.</p>
+                </div>
+
+                <!-- Amenities -->
+                <div class="room-amenities">
+                    <h3>Room Amenities</h3>
+                    <ul class="amenities-grid">
+                        <li><i class="fas fa-wifi"></i> High-Speed Wi-Fi</li>
+                        <li><i class="fas fa-tv"></i> 55" Smart TV</li>
+                        <li><i class="fas fa-shield-alt"></i> Safe Deposit Box</li>
+                        <li><i class="fas fa-shower"></i> Walk-in Rain Shower</li>
+                        <li><i class="fas fa-coffee"></i> Coffee Maker</li>
+                        <li><i class="fas fa-snowflake"></i> AC & Climate Control</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column: Booking Form -->
+             <div class="room-sidebar">
+                <div class="booking-widgets">
+                    <h3>Book Your Stay</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Check In</label>
+                            <input type="date" value="2026-06-23">
+                        </div>
+                        <div class="form-group">
+                            <label>Check Out</label>
+                            <input type="date" value="2026-06-24">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label>Rooms</label>
+                                <select><option>1</option><option>2</option></select>
+                            </div>
+                            <div class="form-group half">
+                                <label>Guests</label>
+                                <select><option>1</option><option>2</option><option selected>4</option></select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-book" onclick="sendWhatsApp()">Check Availability</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Other Rooms Section -->
+
+<section class="other-rooms-section" id="Rooms">
+    <div class="container">
+        <h2 class="section-title">Discover Other Rooms</h2>
+        <div class="rooms-grid">
+            
+            <!-- Room Card 1 -->
+               <a style="text-decoration: none;" href="./Deluxeroom.html">
+            <div class="room-card">
+                <div class="card-badge">Best Selling</div>
+                <div class="card-img">
+                   <img src="./IMAGES/ROOMIMG/TWOBED.jpeg" alt="Palm Breeze Room">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 4 Guests</span>
+                        <span><i class="fas fa-expand"></i> 250 sq.ft</span>
+                    </div>
+                    <h4>Deluxe Room</h4>
+                    <div class="card-price">₹4,000 <span>/night</span></div>
+                </div>
+            </div>
+           </a>
+            <!-- Room Card 2 -->
+               <a style="text-decoration: none;" href="./ClasicFamilyRoom.html">
+            <div class="room-card">
+                <div class="card-img">
+                    <img src="./IMAGES/ROOMIMG/SIZBED.jpeg" alt="Lotus Suite">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 3 Guests</span>
+                        <span><i class="fas fa-expand"></i> 200 sq.ft</span>
+                    </div>
+                     <h4>Classic Family Room</h4>
+                    <div class="card-price">₹3,500 <span>/night</span></div>
+                </div>
+            </div>
+</a>
+            <!-- Room Card 3 -->
+               <a style="text-decoration: none;" href="./FamilyRoom.html">
+            <div class="room-card">
+                <div class="card-img">
+                  <img src="./IMAGES/ROOMIMG/FOURBED.jpeg" alt="Jasmine Retreat">  
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 400 sq.ft</span>
+                    </div>
+                    <h4>Family Room</h4>
+                    <div class="card-price">₹6,500 <span>/night</span></div>
+                </div>
+            </div>
+</a>
+        </div>
+    </div>
+</section>
+<footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="footer-logo">Hotel Galaxy</span>
+                <p style="color: #A09E9C; line-height: 1.8; margin-bottom: 20px; padding-right: 20px;">Providing unparalleled comfort and luxury. Experience the perfect blend of modern amenities and traditional hospitality during your stay with us.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#info">Our Rooms</a></li>
+                    <li><a href="#dining">Dining & Bar</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Hari Patak Overbridge Near Mahakal Mandir Ujjain (M.P)</p>
+                <p><i class="fa-solid fa-phone"></i> +91 911186883</p>
+                <p><i class="fa-solid fa-envelope"></i> Hotelgalaxyujn06@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #A09E9C; margin-bottom: 15px;">Subscribe to receive special offers, exclusive updates, and vacation inspiration.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hotel Galaxy. All Rights Reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: #A09E9C; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: #A09E9C; text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const track = document.getElementById('sliderTrack');
+        const slides = track.querySelectorAll('img');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicatorsContainer = document.getElementById('sliderIndicators');
+        
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        // Create indicator dots dynamically based on number of images
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            indicatorsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlider() {
+            // Move the track horizontally
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Update active dot
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[currentIndex].classList.add('active');
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        // Next Button Click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to start
+            }
+            updateSlider();
+        });
+
+        // Previous Button Click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1; // Loop to end
+            }
+            updateSlider();
+        });
+    });
+    function sendWhatsApp() {
+    const checkIn = document.querySelector('input[type="date"]').value;
+    const checkOut = document.querySelectorAll('input[type="date"]')[1].value;
+    const adults = document.querySelectorAll('select')[0].value;
+    const children = document.querySelectorAll('select')[1].value;
+
+    const message =
+`*New Room Booking Request*
+
+🏨 Galaxy Hotel
+
+📅 Check In: ${checkIn}
+📅 Check Out: ${checkOut}
+👨 Adults: ${adults}
+👶 Children: ${children}`;
+
+    const phone = "919111868883"; // Country code +91
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+}
+</script>
+</body>
+
+</html>

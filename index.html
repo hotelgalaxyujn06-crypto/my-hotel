@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Galaxy - Premium Stays</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+     
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#"><img  class="logo" src="./IMAGES/Hotel Galaxy (1).png"/></a>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#Rooms">Rooms</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#attractions">Explore</a></li>
+            <li><a href="#availability-split*">Check Availability</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+     <div class="hero-slider-container">
+    <div class="slider-bg bg-1"></div>
+    <div class="slider-bg bg-2"></div>
+    <div class="slider-bg bg-3"></div>
+    <div class="slider-bg bg-4"></div>
+
+    <div class="slider-overlay"></div>
+
+    <div class="hero-content">
+        <h1>Experience Pure Comfort</h1>
+        <p>Your perfect getaway in our premium suites.</p>
+    </div>
+</div>
+
+        <div class="booking-section">
+            <div class="booking-widget">
+                <div class="booking-inputs">
+                    <div class="booking-row top-row">
+                        <div class="input-group left-col">
+                            <label>Check In</label> <span class="dash">-</span> <input type="date">
+                        </div>
+                        <div class="input-group">
+                            <label>Check Out</label> <span class="dash">-</span> <input type="date">
+                        </div>
+                    </div>
+                    <div class="booking-row">
+                        <div class="input-group left-col">
+                            <label>Adults</label> <span class="dash">-</span>
+                            <select><option>1</option><option>2</option><option>3</option><option>4</option></select>
+                        </div>
+                        <div class="input-group">
+                            <label>Children</label> <span class="dash">-</span>
+                            <select><option>0</option><option>1</option><option>2</option></select>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn" onclick="sendWhatsApp()">
+    Check Availability
+</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section id="info">
+        <div class="room-info">
+            <div class="info-text">
+                <h2>The Premium Quad Room</h2>
+                <p>Designed with families and groups in mind, this spacious suite features beautifully upholstered double beds with premium linens, modern wall paneling, and a sleek en-suite bathroom.</p>
+                <div class="info-features">
+                    <span><i class="fa-solid fa-bed"></i> 4 Person Capacity</span>
+                    <span><i class="fa-solid fa-tv"></i> Flat Screen TV</span>
+                    <span><i class="fa-solid fa-snowflake"></i> Air Conditioning</span>
+                    <span><i class="fa-solid fa-wifi"></i> Free WiFi</span>
+                </div>
+            </div>
+        </div>
+    </section> -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<section class="other-rooms-section" id="Rooms">
+    <div class="container">
+        <h2 class="section-title">Discover Other Rooms</h2>
+        <div class="rooms-grid">
+            
+            <!-- Room Card 1 -->
+               <a style="text-decoration: none;" href="./Deluxeroom.html">
+            <div class="room-card">
+                <div class="card-badge">Best Selling</div>
+                <div class="card-img">
+                   <img src="./IMAGES/ROOMIMG/TWOBED.jpeg" alt="Palm Breeze Room">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 4 Guests</span>
+                        <span><i class="fas fa-expand"></i> 250 sq.ft</span>
+                    </div>
+                    <h4 >Deluxe Room</h4>
+                    <div class="card-price">₹4,000 <span>/night</span></div>
+                </div>
+            </div>
+           </a>
+            <!-- Room Card 2 -->
+               <a style="text-decoration: none;" href="./ClasicFamilyRoom.html">
+            <div class="room-card">
+                <div class="card-img">
+                    <img src="./IMAGES/ROOMIMG/SIZBED.jpeg" alt="Lotus Suite">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 3 Guests</span>
+                        <span><i class="fas fa-expand"></i> 200 sq.ft</span>
+                    </div>
+                     <h4>Classic Family Room</h4>
+                    <div class="card-price">₹3,500 <span>/night</span></div>
+                </div>
+            </div>
+</a>
+            <!-- Room Card 3 -->
+               <a style="text-decoration: none;" href="./FamilyRoom.html">
+            <div class="room-card">
+                <div class="card-img">
+                  <img src="./IMAGES/ROOMIMG/FOURBED.jpeg" alt="Jasmine Retreat">  
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span><i class="fas fa-user"></i> 2 Guests</span>
+                        <span><i class="fas fa-expand"></i> 400 sq.ft</span>
+                    </div>
+                    <h4>Family Room</h4>
+                    <div class="card-price">₹6,500 <span>/night</span></div>
+                </div>
+            </div>
+</a>
+        </div>
+    </div>
+</section>
+    <section id="gallery" style="background-color: var(--white); padding-top: 0;">
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="./IMAGES/ROOMIMG/FOURBED.jpeg" alt="Room View"></div>
+            <div class="gallery-item"><img src="./IMAGES/ROOMIMG/SIZBED.jpeg" alt="Room View"></div>
+            <div class="gallery-item"><img src="./IMAGES/ROOMIMG/TWOBED.jpeg" alt="Room View"></div>
+        </div>
+    </section>
+
+    <section id="galaxy-hotel">
+    <h2 class="section-title">Galaxy Hotel</h2>
+    <p class="section-subtitle">Experience comfort, luxury, and exceptional hospitality in the heart of the city.</p>
+
+    <div class="dining-grid">
+        <div class="dining-content">
+            <h3>Welcome to Galaxy Hotel</h3>
+
+            <p style="margin-bottom: 20px; color: var(--text-light);">
+                Galaxy Hotel offers a perfect blend of modern elegance and warm hospitality. Whether you're traveling for business or leisure, our spacious rooms, premium amenities, and personalized services ensure a relaxing and memorable stay. Enjoy comfortable accommodations, delicious dining, and easy access to nearby attractions.
+            </p>
+
+            <ul style="list-style: none; line-height: 2; margin-bottom: 25px; color: var(--primary-color);">
+                <li>
+                    <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>
+                    Luxury Rooms & Suites
+                </li>
+                <li>
+                    <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>
+                    Multi-Cuisine Restaurant
+                </li>
+                <li>
+                    <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>
+                    Free Wi-Fi & Parking
+                </li>
+                <li>
+                    <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>
+                    24/7 Room Service & Front Desk
+                </li>
+                <li>
+                    <i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>
+                    Banquet Hall & Event Facilities
+                </li>
+            </ul>
+
+            <a href="#rooms" class="btn">Explore Hotel</a>
+        </div>
+
+        <div class="dining-img"></div>
+    </div>
+</section>
+
+<section id="offers" style="background-color: var(--white);">
+    <h2 class="section-title">Room Discount Offers</h2>
+    <p class="section-subtitle">Enjoy the best room rates with our exclusive accommodation deals.</p>
+
+    <div class="offers-grid">
+
+        <div class="offer-card">
+            <h3>Standard Room Offer</h3>
+            <div class="price">10% OFF</div>
+            <p style="color: var(--text-light); margin-bottom: 20px;">
+                Book a Standard Room for a minimum of one night and receive an instant 10% discount on your stay.
+            </p>
+            <a href="#booking" class="btn" style="width: 100%;">Book Now</a>
+        </div>
+
+        <div class="offer-card">
+            <h3>Deluxe Room Deal</h3>
+            <div class="price">15% OFF</div>
+            <p style="color: var(--text-light); margin-bottom: 20px;">
+                Stay in our Deluxe Room and enjoy a special 15% discount on room charges for selected dates.
+            </p>
+            <a href="#booking" class="btn" style="width: 100%;">Book Now</a>
+        </div>
+
+        <div class="offer-card">
+            <h3>Suite Room Special</h3>
+            <div class="price">20% OFF</div>
+            <p style="color: var(--text-light); margin-bottom: 20px;">
+                Reserve a Suite Room and save up to 20% on your accommodation. Limited-time offer.
+            </p>
+            <a href="#booking" class="btn" style="width: 100%;">Book Now</a>
+        </div>
+
+    </div>
+</section>
+    <section class="exceptional-locality">
+  <div class="bg-pattern"></div>
+
+  <div class="locality-container">
+    <div class="locality-header">
+      <div class="subtitle-wrapper">
+        <span class="line-deco"></span>
+        <span class="subtitle">Exceptional Locality</span>
+        <span class="line-deco"></span>
+      </div>
+      <h2>Temples & Their Distances</h2>
+    </div>
+
+    <div class="temple-grid">
+      
+      <div class="temple-card">
+        <div class="card-image">
+          <img src="./IMAGES/Untitled design/1.png" alt="Shree Mahakaleshwar Mandir">
+        </div>
+        <div class="card-body">
+          <h3>Shree Mahakaleshwar Mandir</h3>
+          <div class="distance-bar">
+            <span class="distance-text">Distance 200m</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="temple-card">
+        <div class="card-image">
+          <img src="./IMAGES/Untitled design/2.png" alt="Shree Kal Bhairav Mandir">
+        </div>
+        <div class="card-body">
+          <h3>Shree Kal Bhairav Mandir</h3>
+          <div class="distance-bar">
+            <span class="distance-text">Distance 3km</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="temple-card">
+        <div class="card-image">
+          <img src="./IMAGES/Untitled design/3.png" alt="Shree Mangalnath Mandir">
+        </div>
+        <div class="card-body">
+          <h3>Shree Mangalnath Mandir</h3>
+          <div class="distance-bar">
+            <span class="distance-text">Distance 4km</span>
+            <span class="arrow">&rarr;</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section id="attractions">
+    <h2 class="section-title">Explore Nearby Destinations</h2>
+    <p class="section-subtitle">Discover famous attractions and spiritual destinations located near Ujjain.</p>
+
+    <div class="attractions-grid">
+
+        <div class="attraction-card" style="background-image: url('./IMAGES/Untitled design/indore.jpg');">
+            <div class="attraction-info">
+                <h4>Indore</h4>
+                <p style="font-size: 0.9rem; opacity: 0.9;">
+                    Explore Madhya Pradesh's largest city, famous for Rajwada Palace, Sarafa Night Market, and delicious street food. Approximately 55 km from Ujjain.
+                </p>
+            </div>
+        </div>
+
+        <div class="attraction-card" style="background-image: url('./IMAGES/Untitled design/omkar.webp');">
+            <div class="attraction-info">
+                <h4>Omkareshwar Temple</h4>
+                <p style="font-size: 0.9rem; opacity: 0.9;">
+                    Visit one of the twelve sacred Jyotirlingas of Lord Shiva, situated on the beautiful Mandhata Island. Around 140 km from Ujjain.
+                </p>
+            </div>
+        </div>
+
+        <div class="attraction-card" style="background-image: url('./IMAGES/Untitled design/MAHESHWARA.png');">
+            <div class="attraction-info">
+                <h4>Maheshwar</h4>
+                <p style="font-size: 0.9rem; opacity: 0.9;">
+                    Discover the majestic Maheshwar Fort, scenic Narmada River Ghats, and the world-famous Maheshwari handloom sarees. About 145 km from Ujjain.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="availability-split" class="availability-split-section">
+    <div class="availability-container">
+        
+        <div class="booking-form-card">
+            <div class="form-header">
+                <span class="sub-heading">R O O M S & S U I T E S <i class="fa-solid fa-water"></i></span>
+                <h2>Hotel Booking</h2>
+            </div>
+            
+            <form class="vertical-booking-form">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Check in" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <i class="fa-regular fa-calendar input-icon"></i>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Check out" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    <i class="fa-regular fa-calendar input-icon"></i>
+                </div>
+                <div class="input-wrapper">
+                    <select required>
+                        <option value="" disabled selected hidden>Adult</option>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                </div>
+                <div class="input-wrapper">
+                    <select required>
+                        <option value="" disabled selected hidden>Children</option>
+                        <option value="0">0 Children</option>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-dark-solid">CHECK AVAILABILITY</button>
+            </form>
+        </div>
+
+        <div class="booking-info-card">
+            <div class="info-content">
+                <span class="sub-heading">H O T E L G A L A X Y <i class="fa-solid fa-water"></i></span>
+                <h2>Check Availability</h2>
+                
+                <p>Each of our guest rooms feature a private bath, wi-fi, cable television.</p>
+                <p>Our guest rooms provide everything you need for a comfortable and enjoyable stay.</p>
+                
+                <div class="contact-box">
+                    <div class="icon-circle">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="contact-text">
+                        <span class="booking-now-text">BOOKING NOW</span>
+                        <a href="tel:+919993187770" class="phone-number">+91 99931 87770</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="faq" style="background-color: var(--white);">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know for a seamless stay.</p>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>What are the check-in and check-out times?</h4>
+                <p style="color: var(--text-light);">Standard check-in is at 2:00 PM, and check-out is at 11:00 AM. Early check-in or late check-out can be arranged based on availability.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is parking available at the hotel?</h4>
+                <p style="color: var(--text-light);">Yes, we offer complimentary secure parking for all our guests with 24/7 surveillance.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do you provide airport or railway station transfers?</h4>
+                <p style="color: var(--text-light);">Yes, we provide cab services and shuttle transfers upon request. Please contact the front desk 24 hours prior to your arrival to book.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <span class="footer-logo">Hotel Galaxy</span>
+                <p style="color: #A09E9C; line-height: 1.8; margin-bottom: 20px; padding-right: 20px;">Providing unparalleled comfort and luxury. Experience the perfect blend of modern amenities and traditional hospitality during your stay with us.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#info">Our Rooms</a></li>
+                    <li><a href="#dining">Dining & Bar</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Hari Patak Overbridge Near Mahakal Mandir Ujjain (M.P)</p>
+                <p><i class="fa-solid fa-phone"></i> +91 911186883</p>
+                <p><i class="fa-solid fa-envelope"></i> Hotelgalaxyujn06@gmail.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p style="color: #A09E9C; margin-bottom: 15px;">Subscribe to receive special offers, exclusive updates, and vacation inspiration.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hotel Galaxy. All Rights Reserved.</p>
+            <div style="display: flex; gap: 20px;">
+                <a href="#" style="color: #A09E9C; text-decoration: none;">Privacy Policy</a>
+                <a href="#" style="color: #A09E9C; text-decoration: none;">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+<script>
+    function sendWhatsApp() {
+    const checkIn = document.querySelector('input[type="date"]').value;
+    const checkOut = document.querySelectorAll('input[type="date"]')[1].value;
+    const adults = document.querySelectorAll('select')[0].value;
+    const children = document.querySelectorAll('select')[1].value;
+
+    const message =
+`*New Room Booking Request*
+
+🏨 Galaxy Hotel
+
+📅 Check In: ${checkIn}
+📅 Check Out: ${checkOut}
+👨 Adults: ${adults}
+👶 Children: ${children}`;
+
+    const phone = "919111868883"; // Country code +91
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
