@@ -1325,7 +1325,7 @@ body {
 }
 
 .room-layout-grid {
-    display: grid;
+    display: ;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     align-items: start; /* Allows sticky sidebar to work */
